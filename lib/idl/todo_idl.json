@@ -1,0 +1,48 @@
+{
+  "version": "0.1.0",
+  "name": "sol_todo",
+  "instructions": [
+    {
+      "name": "initializeTodo",
+      "accounts": [
+        { "name": "user", "isMut": true, "isSigner": true },
+        { "name": "todo", "isMut": true, "isSigner": false },
+        { "name": "systemProgram", "isMut": false, "isSigner": false }
+      ],
+      "args": [
+        { "name": "id", "type": "u8" },
+        { "name": "text", "type": "string" },
+        { "name": "completed", "type": "bool" }
+      ]
+    },
+    {
+      "name": "updateTodo",
+      "accounts": [
+        { "name": "user", "isMut": true, "isSigner": true },
+        { "name": "todo", "isMut": true, "isSigner": false }
+      ],
+      "args": [{ "name": "id", "type": "u8" }]
+    },
+    {
+      "name": "removeTodo",
+      "accounts": [
+        { "name": "user", "isMut": true, "isSigner": true },
+        { "name": "todo", "isMut": true, "isSigner": false }
+      ],
+      "args": [{ "name": "id", "type": "u8" }]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Todo",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          { "name": "id", "type": "u8" },
+          { "name": "text", "type": "bytes" },
+          { "name": "completed", "type": "bool" }
+        ]
+      }
+    }
+  ]
+}
