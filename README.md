@@ -1,39 +1,55 @@
+# Sol-Todo
 
-# **NextDApp** 🚀
+<img src="/public/sol-todo-logo.jpeg" alt="developer-logo" style="width:100px;hight:100px;"/>
 
-A modern **Next.js 15** starter kit with **Phantom wallet integration**, **NextAuth v5**, and **tailored UI components**.
+Sol-Todo is a decentralized to-do application built on the **Solana blockchain** using **Next.js** and **Phantom Wallet** integration. Manage your tasks securely and efficiently with blockchain technology.
 
-## **Features** ✨
+## Features
 
--   **Seamless Authentication** – Secure login with NextAuth v5.
--   **Phantom Wallet Integration** – Web3-ready with Solana support.
--   **Next.js 15 Optimized** – Server components, routing, and performance.
--   **Pre-styled UI** – Tailwind CSS for fast development.
+- ✅ Decentralized task management
+- 🔐 Phantom wallet authentication
+- ⚡ Fast & scalable Next.js architecture
+- 🎨 Clean UI with Tailwind CSS
+- 📌 Persist tasks on the Solana blockchain
 
-## **Getting Started** 🛠
+## Tech Stack
 
-Clone the repository and install dependencies:
+- **Frontend:** Next.js, Tailwind CSS
+- **Blockchain:** Solana, Web3.js, Solana Web3.js
+- **Wallet:** Phantom Wallet
+
+## Installation
 
 ```sh
-git clone https://github.com/mrathod05/NextDApp.git cd NextDApp  
-yarn
+# Clone the repository
+git clone https://github.com/mrathod05/Sol-todo.git
+
+# Navigate to the project directory
+cd sol-todo
+
+# Install dependencies
+yarn install  # or npm install
+
+# Run the development server
+yarn dev  # or npm run dev
 ```
 
-Run the development server:
+## Configuration
 
-```sh
-yarn dev
-```
+- Set up a Solana wallet using **Phantom**.
 
-Open **[http://localhost:3000](http://localhost:3000)** to see it live.
+## Usage
 
-## **Configuration** ⚙️
+1. Connect your Phantom wallet.
+2. Add, complete, and remove tasks stored on Solana.
+3. Enjoy a secure and decentralized task management experience!
 
--   **Environment Variables** – Create a `.env` file and configure the keys.
--   **Auth Providers** – Customize authentication providers in `auth.config.ts`.
+## Contributing
 
-## **Learn More** 📚
+Feel free to fork this repository and create pull requests. Contributions are welcome!
 
--   [Next.js Documentation](https://nextjs.org/docs)
--   [Phantom Wallet Docs](https://phantom.com/en-GB)
--   [NextAuth.js](https://authjs.dev/)
+---
+
+### Developer
+<img src="public/developer.jpg" alt="developer-logo" style="width:100px;hight:100px;"/>
+Developed by <a href="https://meetrathoddeveloper.netlify.app/contact" target="_blank">Meet Rathod</a>. Happy coding! 🚀
